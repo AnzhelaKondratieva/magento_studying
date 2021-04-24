@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Training\Training_TestOM\Model\ManagerInterface" type="Training\Training_AdditionalTestOM\Model\ManagerCustom" />
-    <type name="Training\Training_TestOM\Model\Test">
+    <preference for="Training\TestOM\Model\ManagerInterface" type="Training\AdditionalTestOM\Model\ManagerCustom" />
+    <type name="Training\TestOM\Model\Test">
         <arguments>
             <argument name="name" xsi:type="string">New Custom String</argument>
             <argument name="number" xsi:type="number">420</argument>

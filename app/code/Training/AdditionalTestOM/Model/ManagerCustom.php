@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Training\Training_AdditionalTestOM\Model;
+namespace Training\AdditionalTestOM\Model;
 
 
-use Training\Training_TestOM\Model\ManagerInterface;
+use Training\TestOM\Model\ManagerInterface;
 
 class ManagerCustom implements ManagerInterface
 {

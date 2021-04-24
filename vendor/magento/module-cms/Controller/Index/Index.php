@@ -18,7 +18,7 @@ use Magento\Framework\View\Result\Page as ResultPage;
 use Magento\Cms\Helper\Page;
 use Magento\Store\Model\ScopeInterface;
 use Magento\Framework\App\Action\Action;
-use Training\Training_TestOM\Model\PlayWithTest;
+use Training\TestOM\Model\PlayWithTest;
 
 /**
  * Home page. Needs to be accessible by POST because of the store switching.

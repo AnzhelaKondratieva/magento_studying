@@ -1,6 +1,6 @@
 <?php
 
-namespace Training\Training_TestOM\Model;
+namespace Training\TestOM\Model;
 
 interface ManagerInterface
 {

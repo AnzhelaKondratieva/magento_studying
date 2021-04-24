@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Training\Training_TestOM\Controller\Training;
+namespace Training\TestOM\Controller\Training;
 
 use Magento\Framework\App\Action\HttpGetActionInterface;
 use Magento\Framework\App\ObjectManager;
-use Training\Training_TestOM\Model\Test;
+use Training\TestOM\Model\Test;
 
 class Training implements HttpGetActionInterface
 {

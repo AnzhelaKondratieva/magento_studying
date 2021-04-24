@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Training\Training_TestOM\Model;
+namespace Training\TestOM\Model;
 
-use Training\Training_TestOM\Model\TestFactory;
-use Training\Training_TestOM\Model\Test;
+use Training\TestOM\Model\TestFactory;
+use Training\TestOM\Model\Test;
 
 class PlayWithTest
 {

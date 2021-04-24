@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Training\Training_TestOM\Model;
+namespace Training\TestOM\Model;
 
 
 class Manager implements ManagerInterface

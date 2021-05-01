@@ -2,4 +2,4 @@
 
 use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Dependency', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Training_Dependency', __DIR__);

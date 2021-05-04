@@ -328,6 +328,7 @@ return [
         'Training_Plugin' => 1,
         'Training_ProductObserver' => 1,
         'Training_ProductRedirect' => 1,
+        'Training_Routing' => 1,
         'Training_Template' => 1,
         'Training_TestOM' => 1,
         'Vertex_Tax' => 1,

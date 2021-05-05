@@ -20,7 +20,7 @@ class LogPageHtml implements ObserverInterface
 
     public function execute(Observer $observer)
     {
-        $response = $observer->getEvent()->getData('request');
+        $response = $observer->getEvent()->getData('response');
         $this->logger->debug($response->getBody());
     }
 }

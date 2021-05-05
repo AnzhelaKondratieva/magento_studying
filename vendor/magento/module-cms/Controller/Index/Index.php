@@ -18,7 +18,6 @@ use Magento\Framework\View\Result\Page as ResultPage;
 use Magento\Cms\Helper\Page;
 use Magento\Store\Model\ScopeInterface;
 use Magento\Framework\App\Action\Action;
-use Training\TestOM\Model\PlayWithTest;
 
 /**
  * Home page. Needs to be accessible by POST because of the store switching.
@@ -40,8 +39,6 @@ class Index extends Action implements HttpGetActionInterface, HttpPostActionInte
      */
     private $page;
 
-    private $test;
-
     /**
      * Index constructor.
      *
@@ -49,16 +46,13 @@ class Index extends Action implements HttpGetActionInterface, HttpPostActionInte
      * @param ForwardFactory $resultForwardFactory
      * @param ScopeConfigInterface|null $scopeConfig
      * @param Page|null $page
-     * @param PlayWithTest $test
      */
     public function __construct(
         Context $context,
         ForwardFactory $resultForwardFactory,
         ScopeConfigInterface $scopeConfig = null,
-        Page $page = null,
-        PlayWithTest $test
+        Page $page = null
     ) {
-        $this->test = $test;
         $this->resultForwardFactory = $resultForwardFactory;
         $this->scopeConfig = $scopeConfig ? : ObjectManager::getInstance()->get(ScopeConfigInterface::class);
         $this->page = $page ? : ObjectManager::getInstance()->get(Page::class);
@@ -76,7 +70,6 @@ class Index extends Action implements HttpGetActionInterface, HttpPostActionInte
      */
     public function execute($coreRoute = null)
     {
-        $this->test->run();
         $pageId = $this->scopeConfig->getValue(Page::XML_PATH_HOME_PAGE, ScopeInterface::SCOPE_STORE);
         $resultPage = $this->page->prepareResultPage($this, $pageId);
         if (!$resultPage) {

@@ -331,6 +331,7 @@ return [
         'Training_RedirectToMainPage' => 1,
         'Training_Routing' => 1,
         'Training_Template' => 1,
+        'Training_Test' => 1,
         'Training_TestOM' => 1,
         'Vertex_Tax' => 1,
         'Vertex_AddressValidationApi' => 1,

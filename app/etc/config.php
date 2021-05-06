@@ -326,6 +326,7 @@ return [
         'Training_Ajax' => 1,
         'Training_Dependency2' => 1,
         'Training_Dependency' => 1,
+        'Training_LoginRedirect' => 1,
         'Training_Plugin' => 1,
         'Training_ProductObserver' => 1,
         'Training_ProductRedirect' => 1,

@@ -324,6 +324,7 @@ return [
         'Temando_ShippingRemover' => 1,
         'Training_AdditionalTestOM' => 1,
         'Training_Ajax' => 1,
+        'Training_BlockTest' => 1,
         'Training_Dependency2' => 1,
         'Training_Dependency' => 1,
         'Training_LoginRedirect' => 1,

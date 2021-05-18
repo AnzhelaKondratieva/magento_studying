@@ -14,7 +14,9 @@ class Description
         /*$subject->getProduct()->setDescription('Test description');
 
         return [null];*/
-        $subject->setTemplate('Training_ProductCustomization::description.phtml');
+        if ($subject->getNameInLayout() == 'product.info.sku') {
+            $subject->setTemplate('Training_ProductCustomization::description.phtml');
+        }
     }
 }
 

@@ -334,6 +334,7 @@ return [
         'Training_ProductObserver' => 0,
         'Training_ProductRedirect' => 0,
         'Training_RedirectToMainPage' => 1,
+        'Training_Render' => 1,
         'Training_RenderText' => 1,
         'Training_Routing' => 1,
         'Training_Template' => 1,

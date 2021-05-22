@@ -4,4 +4,11 @@
         <title>One column test render page</title>
     </head>
     <referenceBlock name="testargument" remove="true"/>
+    <referenceContainer name="content">
+        <block name="test.form" template="Training_Render::form.phtml">
+            <arguments>
+                <argument name="viewModel" xsi:type="object">Training\Render\ViewModel\Form</argument>
+            </arguments>
+        </block>
+    </referenceContainer>
 </page>

@@ -27,13 +27,13 @@ class RedirectToLogin implements ObserverInterface
     public function execute(Observer $observer)
     {
         $request = $observer->getEvent()->getData('request');
-        if ($request->getModuleName() == 'catalog'
-            && $request->getControllerName() == 'product'
-            && $request->getActionName() == 'view'
-        ) {
+        // if ($request->getModuleName() == 'catalog'
+        //     && $request->getControllerName() == 'product'
+        //     && $request->getActionName() == 'view'
+        // ) {
             $controller = $observer->getEvent()->getData('controller_action');
             $this->actionFlag->set('', ActionInterface::FLAG_NO_DISPATCH, true);
             $this->redirect->redirect($controller->getResponse(), 'customer/account/login');
-        }
+        // }
     }
 }

@@ -17,7 +17,7 @@ class Test extends AbstractBlock
         parent::__construct($context, $data);
     }
 
-    public function toHtml()
+    protected function _toHtml()
     {
         return "<b>Hello world from block!</b>";
     }

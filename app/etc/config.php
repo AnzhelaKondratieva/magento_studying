@@ -331,6 +331,7 @@ return [
         'Training_LoginRedirect' => 0,
         'Training_Plugin' => 1,
         'Training_ProductCustomization' => 1,
+        'Training_ProductGetInfo' => 1,
         'Training_ProductObserver' => 0,
         'Training_ProductRedirect' => 0,
         'Training_RedirectToMainPage' => 1,

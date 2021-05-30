@@ -1,0 +1,22 @@
+<?php $viewModel = $block->getData('viewModel') ?>
+<?php $productId = $viewModel->getProductId() ?>
+<div data-bind="scope: 'productStock'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "productStock": {
+                        "component": "Training_ProductGetInfo/js/stock",
+                            "config": {
+                                "template": "Training_ProductGetInfo/product-stock",
+                                "url": <?= json_encode($block->getUrl('training_productgetinfo/info/stock', ['id' => $productId])) ?>
+                            }
+                    }
+                }
+            }
+        }
+    }
+</script>

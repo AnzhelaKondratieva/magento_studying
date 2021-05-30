@@ -1,0 +1,9 @@
+<div class="random-stock-box" data-bind="blockLoader: isLoading">
+    <h3 data-bind="i18n: 'Show product stock'"></h3>
+    <div class="stock">
+        <p data-bind="text: stock()"/>
+    </div>
+    <div class="action">
+        <button type="button" data-bind="i18n: 'Show Stock', click: showStock"></button>
+    </div>
+</div>

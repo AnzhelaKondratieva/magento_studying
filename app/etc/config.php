@@ -336,6 +336,7 @@ return [
         'Training_RedirectToMainPage' => 1,
         'Training_Render' => 1,
         'Training_RenderText' => 1,
+        'Training_Reviews' => 1,
         'Training_Routing' => 1,
         'Training_Template' => 1,
         'Training_Test' => 1,

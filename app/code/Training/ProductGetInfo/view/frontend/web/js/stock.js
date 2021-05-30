@@ -21,8 +21,8 @@ define([
                 type: 'post',
                 dataType: 'json'})
                 .done(function (data) {
-                    if (data) {
-                        self.stock(data);
+                    if (data.qty) {
+                        self.stock(data.qty);
                     }
                 }).always(function () {
                 self.isLoading(false);

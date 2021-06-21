@@ -2,7 +2,9 @@
 
 namespace Training\Feedback\Model\ResourceModel;
 
-class Feedback extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
+use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
+
+class Feedback extends AbstractDb
 {
     public function _construct()
     {

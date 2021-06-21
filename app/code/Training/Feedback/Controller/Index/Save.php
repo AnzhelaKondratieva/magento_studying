@@ -29,6 +29,7 @@ class Save extends \Magento\Framework\App\Action\Action implements HttpPostActio
                 $this->validatePost($post);
                 $feedback = $this->feedbackFactory->create();
                 $feedback->setData($post);
+
                 $this->feedbackResource->save($feedback);
                 $this->messageManager->addSuccessMessage(
                 __('Thank you for your feedback.')
@@ -38,10 +39,10 @@ class Save extends \Magento\Framework\App\Action\Action implements HttpPostActio
                     __('An error occurred while processing your form. Please try again later.')
                 );
 
-                return $result->setPath('*/*/');
+                return $result->setPath('*/*/form');
             }
         }
-        return $result->setPath('*/*/');
+        return $result->setPath('*/*/index');
     }
 
     private function validatePost($post)

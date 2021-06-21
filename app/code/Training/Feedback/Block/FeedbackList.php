@@ -21,7 +21,7 @@ class FeedbackList extends Template
 
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
-        \Training\Feedback\Model\ResourceModel\Entity\CollectionFactory $collectionFactory,
+        \Training\Feedback\Model\ResourceModel\Feedback\CollectionFactory $collectionFactory,
         \Magento\Framework\Stdlib\DateTime\Timezone $timezone,
         Feedback $feedbackResource,
         array $data = array()

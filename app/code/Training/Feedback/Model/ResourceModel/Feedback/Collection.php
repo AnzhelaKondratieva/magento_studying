@@ -1,6 +1,6 @@
 <?php
 
-namespace Training\Feedback\Model\ResourceModel\Entity;
+namespace Training\Feedback\Model\ResourceModel\Feedback;
 
 class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
 {

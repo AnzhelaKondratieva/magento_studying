@@ -325,6 +325,7 @@ return [
         'Training_AdditionalTestOM' => 0,
         'Training_Ajax' => 0,
         'Training_BlockTest' => 0,
+        'Training_CustomerPersonalSite' => 1,
         'Training_CustomTemplate' => 0,
         'Training_Dependency2' => 0,
         'Training_Dependency' => 0,

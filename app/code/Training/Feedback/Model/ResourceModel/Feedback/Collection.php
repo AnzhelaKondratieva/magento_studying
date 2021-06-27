@@ -7,6 +7,9 @@ class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\Ab
 
     protected $_idFieldName = 'feedback_id';
 
+    protected $_eventPrefix = 'training_feedback_collection';
+    protected $_eventObject = 'feedback_collection';
+
     protected function _construct()
     {
         $this->_init(

@@ -18,6 +18,7 @@ class FeedbackProducts
     public function loadProductRelations($feedback)
     {
         $productIds = $this->feedbackProductsResource->loadProductRelations($feedback->getId());
+
         return $this->feedbackDataLoader->addProductsToFeedbackByIds($feedback, $productIds);
     }
     public function saveProductRelations($feedback)
@@ -29,6 +30,7 @@ class FeedbackProducts
                 $productIds[] = $product->getId();
             }
         }
+
         $this->feedbackProductsResource->saveProductRelations($feedback->getId(), $productIds);
         return $this;
     }

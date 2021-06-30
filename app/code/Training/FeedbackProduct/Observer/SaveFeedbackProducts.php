@@ -2,9 +2,7 @@
 
 namespace Training\FeedbackProduct\Observer;
 
-use Magento\Framework\Event\ObserverFactory;
-
-class SaveFeedbackProducts implements ObserverInterface
+class SaveFeedbackProducts implements \Magento\Framework\Event\ObserverInterface
 {
     private $feedbackProducts;
     public function __construct(
@@ -12,7 +10,7 @@ class SaveFeedbackProducts implements ObserverInterface
     ) {
         $this->feedbackProducts = $feedbackProducts;
     }
-    public function execute(ObserverFactory $observer)
+    public function execute(\Magento\Framework\Event\Observer $observer)
     {
         $feedback = $observer->getFeedback();
         $this->feedbackProducts->saveProductRelations($feedback);

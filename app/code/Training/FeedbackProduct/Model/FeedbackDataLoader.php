@@ -24,7 +24,6 @@ class FeedbackDataLoader
 
     public function addProductsToFeedbackBySkus($feedback, $skus)
     {
-
         $feedback->getExtensionAttributes()
             ->setProducts($this->getProductsByField(self::PRODUCT_SKU_FIELD, $skus));
 
